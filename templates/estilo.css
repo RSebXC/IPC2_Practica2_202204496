@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #3498db;
+    padding: 10px 0;
+}
+
+header h1 {
+    color: white;
+    
+    text-decoration-color: #2980b9;
+}
+
+.contenido {
+    display: flex;
+    border-top: 1px solid #3498db;
+    border-bottom: 1px solid #3498db;
+}
+
+.izquierda, .derecha {
+    padding: 20px;
+}
+
+.izquierda {
+    width: 35%;
+    border-right: 1px solid #3498db;
+    
+}
+
+.derecha {
+    width: 65%;
+    
+}
+
+h2{
+    text-decoration: underline;
+    text-decoration-color: #2980b9;
+}
+
+.foto {
+    position: relative;
+}
+
+.foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.nombre {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #3498db;
+    
+}
+
+h3 {
+    color: #3498db;
+    
+}
+
+.educacion table {
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.educacion th, .educacion td {
+    text-align: left;
+    padding: 10px;
+}
+
+.habilidades ul, .intereses ul {
+    list-style: none;
+    padding: 0;
+}

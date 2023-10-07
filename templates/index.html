@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #3498db;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            color: white;
+            
+        }
+
+        .contenido {
+            display: flex;
+            border-top: 1px solid #3498db;
+            border-bottom: 1px solid #3498db;
+        }
+
+        .izquierda, .derecha {
+            padding: 20px;
+        }
+
+        .izquierda {
+            width: 35%;
+            border-right: 1px solid #3498db;
+        }
+
+        .derecha {
+            width: 65%;
+        }
+
+        .foto {
+            position: relative;
+        }
+
+        .foto img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .nombre {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #3498db;
+            text-decoration: underline;
+            text-decoration-color: #2980b9;
+        }
+
+        h3 {
+            color: #3498db;
+            text-decoration: underline;
+            text-decoration-color: #2980b9;
+        }
+
+        .educacion table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .educacion th, .educacion td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        .habilidades ul, .intereses ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Currículum Vitae</h1>
+    </header>
+
+    <div class="contenido">
+        <div class="izquierda">
+            <div class="foto">
+                <img src="{{ url_for('static', filename='foto.jpg') }}" alt="">
+            </div>
+            <div class="nombre">
+                Rodrigo Sebastian Castro Aguilar
+            </div>
+            <div class="datos-personales">
+                <h3>Datos Personales</h3>
+                <p><strong>Fecha de Nacimiento:</strong> 27 de mayo del 2004</p>
+                <p><strong>DPI:</strong> 3676287160101</p>
+            </div>
+            <div class="perfil">
+                <h3>Perfil</h3>
+                <p>Estudiante Universitario en busca de empleo, bastante dinámico y activo. Comprometido al trabajo colectivo o 
+                    individual, capaz de liderar o seguir indicaciones, con experiencia en la programación y diseño gráfico. 
+                    Una persona muy responsable con oportunidades de dirigir grupos donde 
+                    ha tenido que ser entusiasta y carismático, con buena disciplina y puntualidad. Bastante optimista y que 
+                    actúa rápido ante situaciones que se le presenten, que es dedicado a la hora de realizar una tarea.</p>
+            </div>
+
+            <div class="datos-contacto">
+                <h3>Datos de Contacto</h3>
+                <p><strong>Dirección:</strong> 18 calle 5-58 zona 11, Col Mariscal</p>
+                <p><strong>Teléfono:</strong> 5944-3078</p>
+                <p><strong>Correo Electrónico:</strong> rs.castro0417@gmail.com</p>
+            </div>
+        </div>
+        <div class="derecha">
+            <section class="educacion">
+                <h2>Educación</h2>
+                <table>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Grado</th>
+                        <th>Institución</th>
+                    </tr>
+                    <tr>
+                        <td>2022-2023</td>
+                        <td>Ingenieria en Ciencias y Sistemas</td>
+                        <td>Universidad San Carlos de Guatemala</td>
+                    </tr>
+                    <tr>
+                        <td>2020-2021</td>
+                        <td>Bachillerato en Computacion con Orientacion Cientifica</td>
+                        <td>Colegio Catolico San Pablo</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="habilidade">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Desarrollo Web</li>
+                    <li>Programación en Java</li>
+                    <li>Programacion en Python</li>
+                    <li>Diseño Grafico Basico</li>
+                    <li>Atencion al Cliente</li>
+                    <li>Inglés Medio</li>
+                </ul>
+            </section>
+
+            <section class="interyhob">
+                <h2>Intereses y Hobbies</h2>
+                <ul>
+                    <li>Publicidad</li>
+                    <li>Streaming</li>
+                    <li>Programación de Videojuegos</li>
+                </ul>
+            </section>
+
+            <section class="referencias">
+                <h2>Referencias Laborales</h2>
+                Almacenes Siman GT<br>
+                Auxiliar de Canales Digitales<br>
+                Emily Lazaro<br>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Rodrigo Castro</p>
+    </footer>
+</body>
+</html>
